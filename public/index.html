@@ -12,10 +12,10 @@
 	<title>Lindeza da titia te amo querido bjos [∞]</title>
 
 	<meta property="og:title" content="Lindeza da titia te amo querido bjos [∞]" />
-<meta property="og:type" content="article" />
-<meta property="og:image" content="http://lindezadatitia.com/img/gandolf.jpg" />
-<meta property="og:url" content="http://lindezadatitia.com" />
-<meta property="og:description" content="Lindeza da titia te amo querido bjos [∞], faça o download do código open source https://github.com/lukcampos/lindeza-da-titia" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://lindezadatitia.com/img/gandolf.jpg" />
+	<meta property="og:url" content="http://lindezadatitia.com" />
+	<meta property="og:description" content="Lindeza da titia te amo querido bjos [∞], faça o download do código open source https://github.com/lukcampos/lindeza-da-titia" />
 
 
 	<!-- SCROLLS -->
@@ -49,6 +49,16 @@
 			cursor: pointer;
 			color: #fff;
 		}
+
+		.jumbotron {
+			padding: 30px;
+			margin-bottom: 30px;
+			font-size: 21px;
+			font-weight: 200;
+			line-height: 2.1428571435;
+			color: inherit;
+			background-color: rgba(238, 238, 238, 0.72);
+		}
 	</style>
 
 	<!-- SPELLS -->
@@ -73,28 +83,29 @@
 
 			<h2> Lindeza da titia te amo querido bjos <span class="label label-info">{{ todos.length }}</span></h2>
 			<hr/>
-			<p>Quanto Lindeza da titia te amo querido bjos, essa lindeza merece?<p>
+			<p>Quanto Lindeza da titia te amo querido bjos, essa lindeza merece?
+				<p>
 
-				<!-- FORM TO CREATE TODOS -->
-				<div id="todo-form" class="row">
-					<div class="col-sm-8 col-sm-offset-2 text-center">
-						<form>
-							<div class="form-group">
+					<!-- FORM TO CREATE TODOS -->
+					<div id="todo-form" class="row">
+						<div class="col-sm-8 col-sm-offset-2 text-center">
+							<form>
+								<div class="form-group">
 
-								<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
-								<input type="text" class="form-control input-lg text-center" placeholder="Mande uma mensagem pro menino gandolf" ng-model="formData.text">
-							</div>
+									<!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+									<input type="text" class="form-control input-lg text-center" placeholder="Mande uma mensagem pro menino gandolf" ng-model="formData.text">
+								</div>
 
-							<!-- createToDo() WILL CREATE NEW TODOS -->
-							<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add +1</button>
-						</form>
-						<br/>
-						<p class="text-center">
-							lindeza da titia é open source, faça o download no <a target="_blank" href="https://github.com/lukcampos/lindeza-da-titia">GitHub</a>
+								<!-- createToDo() WILL CREATE NEW TODOS -->
+								<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add +1</button>
+							</form>
+							<br/>
+							<p class="text-center">
+								lindeza da titia é open source, faça o download no <a target="_blank" href="https://github.com/lukcampos/lindeza-da-titia">GitHub</a>
 
-						</p>
+							</p>
+						</div>
 					</div>
-				</div>
 
 		</div>
 
@@ -106,9 +117,9 @@
 
 				<ol>
 
-						<li lass="checkbox" ng-repeat="todo in todos" style="color:#fff;font-size:20px;"> {{ todo.text }}
+					<li lass="checkbox" ng-repeat="todo in todos" style="color:#fff;font-size:20px;"> {{ todo.text }}
 
-						</li>
+					</li>
 
 
 				</ol>
